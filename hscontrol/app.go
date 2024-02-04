@@ -881,15 +881,19 @@ func (h *Headscale) getTLSSettings() (*tls.Config, error) {
 		if !strings.HasPrefix(h.cfg.ServerURL, "https://") {
 			log.Warn().Msg("Listening with TLS but ServerURL does not start with https://")
 		}
-
-		tlsConfig := &tls.Config{
-			NextProtos:   []string{"http/1.1"},
-			Certificates: make([]tls.Certificate, 1),
-			MinVersion:   tls.VersionTLS12,
+		certReloader := types.CertReloader{
+			CertFile:          h.cfg.TLS.CertPath,
+			KeyFile:           h.cfg.TLS.KeyPath,
+			CachedCert:        nil,
+			CachedCertModTime: time.Now(),
+			CachedKeyModTime:  time.Now(),
 		}
 
-		tlsConfig.Certificates[0], err = tls.LoadX509KeyPair(h.cfg.TLS.CertPath, h.cfg.TLS.KeyPath)
-
+		tlsConfig := &tls.Config{
+			NextProtos:     []string{"http/1.1"},
+			GetCertificate: certReloader.GetCertificate,
+			MinVersion:     tls.VersionTLS12,
+		}
 		return tlsConfig, err
 	}
 }
