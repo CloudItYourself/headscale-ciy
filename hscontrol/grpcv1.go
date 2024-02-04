@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
+	v1 "github.com/CloudItYourself/headscale-ciy/gen/go/headscale/v1"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"github.com/rs/zerolog/log"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

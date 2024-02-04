@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/juanfont/headscale/integration/tsic"
+	"github.com/CloudItYourself/headscale-ciy/integration/tsic"
 )
 
 const (

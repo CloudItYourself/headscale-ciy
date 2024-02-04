@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
 	"tailscale.com/tailcfg"
 	"tailscale.com/types/key"
 )

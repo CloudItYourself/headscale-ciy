@@ -3,7 +3,7 @@ package matcher
 import (
 	"net/netip"
 
-	"github.com/juanfont/headscale/hscontrol/util"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"go4.org/netipx"
 	"tailscale.com/tailcfg"
 )

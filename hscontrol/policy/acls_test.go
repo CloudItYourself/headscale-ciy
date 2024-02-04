@@ -5,9 +5,9 @@ import (
 	"net/netip"
 	"testing"
 
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"github.com/google/go-cmp/cmp"
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"

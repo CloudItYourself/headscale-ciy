@@ -6,10 +6,10 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/juanfont/headscale/hscontrol/util"
-	"github.com/juanfont/headscale/integration/dockertestutil"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
+	"github.com/CloudItYourself/headscale-ciy/integration/dockertestutil"
+	"github.com/CloudItYourself/headscale-ciy/integration/hsic"
+	"github.com/CloudItYourself/headscale-ciy/integration/tsic"
 	"github.com/ory/dockertest/v3"
 )
 

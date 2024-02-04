@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"github.com/samber/lo"
 	"tailscale.com/tailcfg"
 )

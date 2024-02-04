@@ -6,8 +6,8 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"github.com/gorilla/mux"
-	"github.com/juanfont/headscale/hscontrol/types"
 	"github.com/rs/zerolog/log"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"

@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/notifier"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"github.com/google/go-cmp/cmp"
-	"github.com/juanfont/headscale/hscontrol/notifier"
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/check.v1"
 	"gorm.io/gorm"

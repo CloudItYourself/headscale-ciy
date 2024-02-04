@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/util"
+	v1 "github.com/CloudItYourself/headscale-ciy/gen/go/headscale/v1"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"gorm.io/gorm"
 	"tailscale.com/tailcfg"

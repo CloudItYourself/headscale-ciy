@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/policy/matcher"
+	v1 "github.com/CloudItYourself/headscale-ciy/gen/go/headscale/v1"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy/matcher"
 	"github.com/rs/zerolog/log"
 	"go4.org/netipx"
 	"google.golang.org/protobuf/types/known/timestamppb"

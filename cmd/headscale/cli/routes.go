@@ -6,8 +6,8 @@ import (
 	"net/netip"
 	"strconv"
 
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/types"
+	v1 "github.com/CloudItYourself/headscale-ciy/gen/go/headscale/v1"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/status"

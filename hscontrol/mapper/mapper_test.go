@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
 	"gopkg.in/check.v1"
 	"tailscale.com/tailcfg"
 	"tailscale.com/types/dnstype"

@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/juanfont/headscale/hscontrol/notifier"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/notifier"
 	"gopkg.in/check.v1"
 )
 

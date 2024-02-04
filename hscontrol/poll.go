@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/mapper"
-	"github.com/juanfont/headscale/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/mapper"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"github.com/rs/zerolog/log"
 	xslices "golang.org/x/exp/slices"
 	"tailscale.com/tailcfg"

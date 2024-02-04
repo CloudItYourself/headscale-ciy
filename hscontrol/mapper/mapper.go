@@ -15,10 +15,10 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	mapset "github.com/deckarep/golang-set/v2"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
 	"github.com/klauspost/compress/zstd"
 	"github.com/rs/zerolog/log"
 	"golang.org/x/exp/maps"

@@ -9,8 +9,8 @@ import (
 	"time"
 
 	survey "github.com/AlecAivazis/survey/v2"
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/util"
+	v1 "github.com/CloudItYourself/headscale-ciy/gen/go/headscale/v1"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"github.com/pterm/pterm"
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/status"

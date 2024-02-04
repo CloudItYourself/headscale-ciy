@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
+	v1 "github.com/CloudItYourself/headscale-ciy/gen/go/headscale/v1"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/integration/hsic"
+	"github.com/CloudItYourself/headscale-ciy/integration/tsic"
 	"github.com/stretchr/testify/assert"
 )
 

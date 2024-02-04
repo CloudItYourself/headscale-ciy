@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/integration/hsic"
+	"github.com/CloudItYourself/headscale-ciy/integration/tsic"
 	"github.com/stretchr/testify/assert"
 )
 

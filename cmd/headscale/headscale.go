@@ -4,8 +4,8 @@ import (
 	"os"
 	"time"
 
+	"github.com/CloudItYourself/headscale-ciy/cmd/headscale/cli"
 	"github.com/efekarakus/termcolor"
-	"github.com/juanfont/headscale/cmd/headscale/cli"
 	"github.com/pkg/profile"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"

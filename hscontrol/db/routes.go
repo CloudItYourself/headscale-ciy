@@ -4,8 +4,8 @@ import (
 	"errors"
 	"net/netip"
 
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"github.com/rs/zerolog/log"
 	"github.com/samber/lo"
 	"gorm.io/gorm"
@@ -139,7 +139,7 @@ func (hsdb *HSDatabase) enableRoute(id uint64) error {
 
 	// Tailscale requires both IPv4 and IPv6 exit routes to
 	// be enabled at the same time, as per
-	// https://github.com/juanfont/headscale/issues/804#issuecomment-1399314002
+	// https://github.com/CloudItYourself/headscale-ciy/issues/804#issuecomment-1399314002
 	if route.IsExitRoute() {
 		return hsdb.enableRoutes(
 			&route.Node,
@@ -165,7 +165,7 @@ func (hsdb *HSDatabase) DisableRoute(id uint64) error {
 
 	// Tailscale requires both IPv4 and IPv6 exit routes to
 	// be enabled at the same time, as per
-	// https://github.com/juanfont/headscale/issues/804#issuecomment-1399314002
+	// https://github.com/CloudItYourself/headscale-ciy/issues/804#issuecomment-1399314002
 	if !route.IsExitRoute() {
 		err = hsdb.failoverRouteWithNotify(route)
 		if err != nil {
@@ -231,7 +231,7 @@ func (hsdb *HSDatabase) DeleteRoute(id uint64) error {
 
 	// Tailscale requires both IPv4 and IPv6 exit routes to
 	// be enabled at the same time, as per
-	// https://github.com/juanfont/headscale/issues/804#issuecomment-1399314002
+	// https://github.com/CloudItYourself/headscale-ciy/issues/804#issuecomment-1399314002
 	if !route.IsExitRoute() {
 		err := hsdb.failoverRouteWithNotify(route)
 		if err != nil {

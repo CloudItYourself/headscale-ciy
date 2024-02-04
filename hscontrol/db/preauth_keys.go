@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/juanfont/headscale/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"gorm.io/gorm"
 )
 

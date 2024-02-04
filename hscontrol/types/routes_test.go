@@ -5,8 +5,8 @@ import (
 	"net/netip"
 	"testing"
 
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"github.com/google/go-cmp/cmp"
-	"github.com/juanfont/headscale/hscontrol/util"
 )
 
 func TestPrefixMap(t *testing.T) {

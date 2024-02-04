@@ -5,7 +5,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/juanfont/headscale/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
@@ -79,7 +79,7 @@ func initConfig() {
 			if err == nil && res.Outdated {
 				//nolint
 				fmt.Printf(
-					"An updated version of Headscale has been found (%s vs. your current %s). Check it out https://github.com/juanfont/headscale/releases\n",
+					"An updated version of Headscale has been found (%s vs. your current %s). Check it out https://github.com/CloudItYourself/headscale-ciy/releases\n",
 					res.Current,
 					Version,
 				)
@@ -94,7 +94,7 @@ var rootCmd = &cobra.Command{
 	Long: `
 headscale is an open source implementation of the Tailscale control server
 
-https://github.com/juanfont/headscale`,
+https://github.com/CloudItYourself/headscale-ciy`,
 }
 
 func Execute() {

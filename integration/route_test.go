@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
+	v1 "github.com/CloudItYourself/headscale-ciy/gen/go/headscale/v1"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/policy"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
+	"github.com/CloudItYourself/headscale-ciy/integration/hsic"
+	"github.com/CloudItYourself/headscale-ciy/integration/tsic"
 	"github.com/google/go-cmp/cmp"
-	v1 "github.com/juanfont/headscale/gen/go/headscale/v1"
-	"github.com/juanfont/headscale/hscontrol/policy"
-	"github.com/juanfont/headscale/hscontrol/util"
-	"github.com/juanfont/headscale/integration/hsic"
-	"github.com/juanfont/headscale/integration/tsic"
 	"github.com/stretchr/testify/assert"
 	"tailscale.com/types/ipproto"
 	"tailscale.com/wgengine/filter"
@@ -929,7 +929,7 @@ func TestEnableDisableAutoApprovedRoute(t *testing.T) {
 // TestSubnetRouteACL verifies that Subnet routes are distributed
 // as expected when ACLs are activated.
 // It implements the issue from
-// https://github.com/juanfont/headscale/issues/1604
+// https://github.com/CloudItYourself/headscale-ciy/issues/1604
 func TestSubnetRouteACL(t *testing.T) {
 	IntegrationSkip(t)
 	t.Parallel()

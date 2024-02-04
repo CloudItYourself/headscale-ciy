@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/juanfont/headscale/hscontrol/types"
-	"github.com/juanfont/headscale/hscontrol/util"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/types"
+	"github.com/CloudItYourself/headscale-ciy/hscontrol/util"
 	"github.com/rs/zerolog/log"
 	"tailscale.com/types/key"
 )
