@@ -1,4 +1,4 @@
-module github.com/juanfont/headscale
+module github.com/CloudItYourself/headscale-ciy
 
 go 1.21.0
 

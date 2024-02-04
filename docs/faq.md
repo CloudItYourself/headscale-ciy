@@ -42,7 +42,7 @@ Please be aware that there are a number of reasons why we might not accept speci
 ## Do you support Y method of deploying Headscale?
 
 We currently support deploying `headscale` using our binaries and the DEB packages. Both can be found in the
-[GitHub releases page](https://github.com/juanfont/headscale/releases).
+[GitHub releases page](https://github.com/CloudItYourself/headscale-ciy/releases).
 
 In addition to that, there are semi-official RPM packages by the Fedora infra team https://copr.fedorainfracloud.org/coprs/jonathanspw/headscale/
 

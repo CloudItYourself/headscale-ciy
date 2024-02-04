@@ -33,7 +33,7 @@
           # update this if you have a mismatch after doing a change to thos files.
           vendorHash = "sha256-8x4RKaS8vnBYTPlvQTkDKWIAJOgPF99hvPiuRyTMrA8=";
 
-          ldflags = ["-s" "-w" "-X github.com/juanfont/headscale/cmd/headscale/cli.Version=v${version}"];
+          ldflags = ["-s" "-w" "-X github.com/CloudItYourself/headscale-ciy/cmd/headscale/cli.Version=v${version}"];
         };
 
         golines = pkgs.buildGoModule rec {

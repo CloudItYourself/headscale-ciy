@@ -7,7 +7,7 @@ site_description: >-
 
 # Repository
 repo_name: juanfont/headscale
-repo_url: https://github.com/juanfont/headscale
+repo_url: https://github.com/CloudItYourself/headscale-ciy
 
 # Copyright
 copyright: Copyright &copy; 2023 Headscale authors
@@ -69,11 +69,11 @@ extra:
     json: [.s2]
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/juanfont/headscale
+      link: https://github.com/CloudItYourself/headscale-ciy
     - icon: material/coffee
       link: https://ko-fi.com/headscale
     - icon: fontawesome/brands/docker
-      link: https://github.com/juanfont/headscale/pkgs/container/headscale
+      link: https://github.com/CloudItYourself/headscale-ciy/pkgs/container/headscale
     - icon: fontawesome/brands/discord
       link: https://discord.gg/c84AZQhmpx
 

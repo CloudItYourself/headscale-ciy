@@ -20,11 +20,11 @@ configuration (`/etc/headscale/config.yaml`).
 
 ## Installation
 
-1. Download the lastest Headscale package for your platform (`.deb` for Ubuntu and Debian) from [Headscale's releases page](https://github.com/juanfont/headscale/releases):
+1. Download the lastest Headscale package for your platform (`.deb` for Ubuntu and Debian) from [Headscale's releases page](https://github.com/CloudItYourself/headscale-ciy/releases):
 
 ```shell
 wget --output-document=headscale.deb \
-  https://github.com/juanfont/headscale/releases/download/v<HEADSCALE VERSION>/headscale_<HEADSCALE VERSION>_linux_<ARCH>.deb
+  https://github.com/CloudItYourself/headscale-ciy/releases/download/v<HEADSCALE VERSION>/headscale_<HEADSCALE VERSION>_linux_<ARCH>.deb
 ```
 
 2. Install Headscale:
