@@ -20,7 +20,17 @@ jobs:
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
       - name: Run goreleaser
-        run: nix develop --command -- goreleaser release --clean
-        env:
-          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: nix develop --command -- goreleaser release --clean --skip-publish
+      
+      - name: Release amd64 package
+        run: |
+          PACKAGE_VERSION=1.0.0
+          PACKAGE_REGISTRY_URL="https://gitlab.example.com/api/v4/projects/54080196/packages/generic/headscale-ciy/$PACKAGE_VERSION"
+          curl --header "JOB-TOKEN: glpat-3zqVQwKxwU_Qsvc_8fw8" --upload-file ./dist/*amd64.deb $PACKAGE_REGISTRY_URL/headscale-ciy-amd64.deb
+
+      - name: Release arm64 package
+        run: |
+          PACKAGE_VERSION=1.0.0
+          PACKAGE_REGISTRY_URL="https://gitlab.example.com/api/v4/projects/54080196/packages/generic/headscale-ciy/$PACKAGE_VERSION"
+          curl --header "JOB-TOKEN: glpat-3zqVQwKxwU_Qsvc_8fw8" --upload-file ./dist/*arm64.deb $PACKAGE_REGISTRY_URL/headscale-ciy-arm64.deb
           
