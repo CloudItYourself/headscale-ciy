@@ -19,6 +19,7 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
         with:
           kvm: false
+          init: none
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
       - name: Run goreleaser
