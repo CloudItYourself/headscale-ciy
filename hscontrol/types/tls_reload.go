@@ -32,7 +32,14 @@ func (cr *CertReloader) GetCertificate(h *tls.ClientHelloInfo) (*tls.Certificate
 	if cr.CachedCert == nil || (key_stat.ModTime().After(cr.CachedKeyModTime) && cert_stat.ModTime().After(cr.CachedCertModTime)) {
 		pair, err := tls.LoadX509KeyPair(cr.CertFile, cr.KeyFile)
 		if err != nil {
-			return nil, fmt.Errorf("failed loading tls key pair: %w", err)
+			if cr.CachedCert == nil {
+				return nil, fmt.Errorf("failed loading tls key pair: %w", err)
+			} else {
+				log.Printf("Failed to load new certificates... returning previous cert")
+				return cr.CachedCert, nil
+			}
+		} else {
+			log.Printf("TLS Certificate reloaded!!")
 		}
 
 		cr.CachedCert = &pair
