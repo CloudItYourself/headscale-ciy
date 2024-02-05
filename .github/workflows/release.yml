@@ -17,6 +17,8 @@ jobs:
           fetch-depth: 0
 
       - uses: DeterminateSystems/nix-installer-action@main
+        with:
+          enable_kvm: false
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
       - name: Run goreleaser
