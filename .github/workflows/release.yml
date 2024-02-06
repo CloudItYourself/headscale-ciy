@@ -16,6 +16,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Perform git reset
+        run: |
+          git reset --hard HEAD
+
       - uses: DeterminateSystems/nix-installer-action@main
         with:
           kvm: false
