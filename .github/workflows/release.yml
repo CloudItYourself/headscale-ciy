@@ -21,16 +21,7 @@ jobs:
           git reset --hard HEAD
 
       - uses: DeterminateSystems/nix-installer-action@main
-        with:
-          kvm: false
-          init: none
       - uses: DeterminateSystems/magic-nix-cache-action@main
-
-      - name: Run tool install
-        run: nix develop
-
-      - name: Run build
-        run: nix build
 
       - name: Run goreleaser
         run: nix develop --command -- goreleaser release --clean --skip-publish
