@@ -9,7 +9,7 @@ on:
 
 jobs:
   goreleaser:
-    runs-on: self-hosted
+    runs-on: [self-hosted, linux]
     env:
       GOMODCACHE: /tmp/gomodcache
       GOCACHE: /tmp/gocache
